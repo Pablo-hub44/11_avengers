@@ -15,6 +15,5 @@
 * Spider Woman
 * Thor
 * Vision
-* Wasp
 * Antman
 * nick negro
