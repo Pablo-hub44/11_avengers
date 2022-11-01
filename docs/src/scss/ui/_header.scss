@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../base/mixins' as m;
+@use '../base/animaciones' as *;
+//
+.header {
+    //background-color: $negro;
+    @include m.background-image('../img/header.jpg');
+    position: relative;
+    .header-guitarra {
+        display: none; //va a ocultar
+        @include media-breakpoint-up(lg) {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            animation-duration: 1s;
+            animation-delay: 0s; //cuanto tiempo va a durar la animacion
+            animation-timing-function: ease-in-out; //similar a una transicion
+            animation-name: animarImagen;
+        }
+    }
+}
+.navegacion {
+    position: relative;
+    z-index: 2;
+    a {
+        &:hover {
+            background-color: $primary;
+            transition: .25s ease;
+        }
+    }
+}

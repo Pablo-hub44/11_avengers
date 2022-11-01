@@ -1,0 +1,40 @@
+$negro: #262626;
+$blanco: #FFF;
+$naranja: #e99401;
+//asignar colores
+$primary: $naranja;
+$white: $blanco;
+$dark: $negro;
+//@at-root
+//tipografia
+$fuente-headings: 'Outfit', sans-serif;
+$fuente-textos: 'Outfit', sans-serif;
+//
+$font-family-base: $fuente-textos;
+$headings-font-family: $fuente-headings;
+$headings-font-weight: 900;
+//cambiar el tamaño de los H
+$h1-font-size: 4.4rem;
+$h2-font-size: 3.6rem;
+$h3-font-size: 2.6rem;
+$headings-color: $primary;
+// 
+//botones
+$btn-font-weight: 900;
+//$btn-border-radius: 0;
+//links
+$link-color: $white;
+$link-hover-color: $white;
+$link-decoration: none;
+//cards
+$card-border-radius: 2.2rem;
+// $card-border-width: 0;
+// 
+//inputs
+$input-border-radius: 1rem;
+$input-border-color: $dark;
+.fw-900 {
+    font-weight: 900;
+}
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
